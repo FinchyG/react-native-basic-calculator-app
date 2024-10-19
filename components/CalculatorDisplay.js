@@ -14,12 +14,13 @@ function CalculatorDisplay(props) {
 
   const styles = StyleSheet.create({
     displayView: {
-      width: '95%',
       height: 30,
+      width: '90%',
       padding: 5,
       backgroundColor: '#F5F5DC',
-      borderWidth: 1,
-      borderColor: '#D3D3D3',
+      borderTopWidth: 2,
+      borderLeftWidth: 2,
+      borderColor: '#857A5E',
     },
     displayText: {
       fontFamily: 'monospace',

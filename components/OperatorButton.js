@@ -1,15 +1,18 @@
 import React from 'react';
-import {StyleSheet, Button} from 'react-native';
+import {StyleSheet, View, Button} from 'react-native';
 
 function OperatorButton(props) {
   
   return (
-    <Button 
-      style={styles.OperatorButton}
-      onPress={props.onPress}
-      symbol={props.symbol}
-      title={props.symbol}    
-    />
+    <View style={styles.operatorButton}>
+      <Button 
+        color={'#BC8F8F'}
+        onPress={props.onPress}
+        symbol={props.symbol}
+        title={props.title}
+        accessibilityLabel={props.accessibilityLabel}    
+      />
+    </View>
   );
 }
 
@@ -17,12 +20,9 @@ const styles = StyleSheet.create({
   operatorButton: {
     width:'30%',
     height: '95%',
-    margin: 1,
-    backgroundColor:'#BC8F8F',
-    textAlign: 'center',
-    border: 1,
-    borderColor: '#7A6666',
-    borderRadius: 2,
+    borderTopWidth: 2,
+    borderLeftWidth: 2,
+    borderColor: '#824321',
   },
 });
 
